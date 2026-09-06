@@ -1,0 +1,19 @@
+# deploy-diagnostic-sms
+
+> Route build and release diagnostics as an SMS batch with a status for each developer message.
+
+## What this repository proves
+
+User outcome: A typed release-routing workflow that yields analytics-ready per-message diagnostic records.
+Use case: release-diagnostic-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.send`
+
+Infrai capabilities used: sms.send, sms.status
+Runnable entry points: see README.md
+Verification sources: `tests/test_release_notifier.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

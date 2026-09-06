@@ -1,0 +1,30 @@
+{
+  "build": {
+    "build_id": "build-9421",
+    "pipeline": "artifact-publisher",
+    "commit_sha": "8f31c2a",
+    "outcome": "passed"
+  },
+  "release": {
+    "release_id": "artifact-publisher-3.7.0",
+    "environment": "production",
+    "state": "completed",
+    "diagnostic": "Package index and provenance record are available."
+  },
+  "routes": [
+    {
+      "developer_id": "release-oncall",
+      "phone": "+14155550120",
+      "pipelines": ["artifact-publisher"],
+      "environments": ["production"],
+      "release_sms": true
+    },
+    {
+      "developer_id": "staging-owner",
+      "phone": "+14155550121",
+      "pipelines": ["artifact-publisher"],
+      "environments": ["staging"],
+      "release_sms": true
+    }
+  ]
+}
